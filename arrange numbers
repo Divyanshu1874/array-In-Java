@@ -1,0 +1,37 @@
+package aRray;
+import java.util.*;
+public class practicalArray {
+	//arrange numbers in array
+	
+	
+	
+	public static int[] aRrangeN(int [] arr, int start, int end){
+		for(int value = 1; start <= end; value++) {
+			if(value % 2 == 1) {
+				arr[start] = value;
+				start ++;
+			}
+	
+			else {
+				arr[end] = value;
+				end--;
+			}
+		
+		}
+	   return arr;	
+	}
+	
+	public static void main(String[] args) {
+		int [] arr = new int[5];
+		int start = 0 ;
+		int end = arr.length-1;
+	
+		
+		aRrangeN(arr, start, end);
+		for(int i = 0 ; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		
+		
+	}
+	}
