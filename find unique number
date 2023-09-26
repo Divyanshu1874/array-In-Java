@@ -1,0 +1,37 @@
+package aRray;
+import java.util.*;
+
+public class practicalArray {
+	
+	public static int uniqueNumber(int arr[], int size) {
+		int res = arr[0];
+
+        // Step 4: Loop to read array elements and find the unique number
+        for(int i = 1; i < size; i++) {
+        	 res = res ^ arr[i];
+        }
+        return res;
+        
+	}
+	
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+
+        int size = scan.nextInt();
+
+
+        int [] arr = new int[size];
+        
+        for(int i = 0; i < size; i++ ) {
+        	arr[i] = scan.nextInt();
+        }
+        
+        int result = uniqueNumber(arr,size);
+        System.out.println(result);
+        
+       
+           
+        }
+}
+  
