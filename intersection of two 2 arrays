@@ -1,0 +1,53 @@
+package aRray;
+import java.util.*;
+public class intersectionTwoArray {
+	
+	public static void intersectionTwoArray(int [] arr1,int [] arr2,int size) {
+		for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (arr1[i] == arr2[j]) {
+                	System.out.println(arr2[j]);
+                	
+	}
+            
+		} 
+           
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		int size = scan.nextInt();
+		
+		int [] arr1 = new int[size];
+		for(int i = 0; i < size; i++) {
+			arr1[i] = scan.nextInt();
+		}
+		
+		int [] arr2 = new int[size];
+		for(int j = 0; j < size; j++) {
+			arr2[j] = scan.nextInt();		
+			}
+		
+		
+		///if u want to call in void 
+		 intersectionTwoArray(arr1,arr2,size);
+		
+		
+                   
+	
+	
+	
+	
+	
+	
+	
+                
+            }
+}
+	
+	
+	
