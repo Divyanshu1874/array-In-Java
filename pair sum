@@ -1,0 +1,29 @@
+package aRray;
+import java.util.*;
+public class pairSum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		int size = scan.nextInt();
+		int count =0;   //this is for count the pair of sum
+		int x = 10; // yaha jo add krke chahiye wo dalenge
+		
+		int [] arr = new int[size];  // array of size
+		
+		for(int i = 0; i < size; i++) {
+			arr[i] = scan.nextInt();}
+			
+			for(int i = 0 ; i < size; i++) {
+			for(int j = i+1; j < size; j++) {
+				if(arr[i]+arr[j] == x) {
+					
+					count++;    
+				}
+		}
+				}
+			System.out.print(count); 
+	}
+		
+	}
