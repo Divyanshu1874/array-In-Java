@@ -1,0 +1,42 @@
+package learningJava;
+import java.util.*;
+public class regPract {
+	
+	
+	public static int linearSearch(int arr[], int size, int find) {
+		for(int i = 0 ; i < size; i++) {
+			if(arr[i] == find) {
+				return i; // Return the index of the element when it's found
+				//we are return i because i is index whether arr[i] is value of i
+			}
+
+			
+		}
+		return -1;
+	
+	}
+	
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter Size of Array:");
+		int size = scan.nextInt();   //declare size of array
+		
+		int arr [] = new int[size];
+		System.out.println("Enter element of Array:");
+		for(int i = 0; i < size; i++) {
+			arr[i] = scan.nextInt();   //take array from user
+		}
+		
+		
+		System.out.println("Enter Element to find:");
+		int find = scan.nextInt();  //which elemet need to find
+		
+		
+		int result = linearSearch(arr,size,find);
+		System.out.print("Element found at:" + result + " "+ "index");
+
+	}
+		
+
+}
