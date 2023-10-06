@@ -1,0 +1,45 @@
+package learningJava;
+import java.util.*;
+public class minMax {
+
+public static void minMax(int arr[], int size) {
+		
+		//initialize min and Max from 0th index of array
+		
+		// second option - --  min = 100, max =   -100;
+		int min = arr[0];
+		int max = arr[0];
+
+		
+		 for(int i = 1 ; i < size; i++) {
+	    	  if(arr[i] < min) {
+	    		  min = arr[i];
+	    	  }
+	    	   if(arr[i] > max) {
+	    		  max = arr[i];
+	    		  
+	    	  }
+	      }
+		 System.out.println(min);
+		 System.out.println(max);
+		
+	}
+	    public static void main(String[] args) {
+	      Scanner scan = new Scanner(System.in);
+	      System.out.println("Enter Size of an Array:");
+	      int size = scan.nextInt();
+	      System.out.println("Enter Element of Array:");
+	      int arr[] = new int[size];
+	      for(int i = 0 ; i < size; i++) {
+	    	  arr[i] = scan.nextInt();
+	      }
+
+	     
+	      //call to function
+	      
+	      minMax(arr,size);
+
+	    
+	    
+	    }
+}
